@@ -67,5 +67,6 @@ Access to clean water is a critical global concern. Accurate prediction of vario
 
 <h2 style="color:#00aa00;">🔗 <span style="color:#00ff00;">Model Link</span></h2>
 
-```text
-https://drive.google.com/file/d/1zqzXAj_Ovq9O-GZUMXeXndyaPiFkq2mG/view?usp=drive_link
+
+
+<a href="https://drive.google.com/file/d/1zqzXAj_Ovq9O-GZUMXeXndyaPiFkq2mG/view?usp=drive_link " style="color:#00ff00; font-weight:bold;" target="_blank">https://drive.google.com/file/d/1zqzXAj_Ovq9O-GZUMXeXndyaPiFkq2mG/view?usp=drive_link </a>
