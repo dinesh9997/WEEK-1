@@ -3,7 +3,8 @@ It is about [WATER QUALITY PREDICTION] using the machine learning algorithm.<br>
 I have selected for the green skills AI technology internship on edunet foundation. <br>
 Author :- Gujju Dinesh
 
-# Water Quality Prediction - RMS
+ <span style="color:green">Water Quality Prediction - RMS</span>
+
 
 This project aims to predict multiple water quality parameters using machine learning techniques, specifically `MultiOutputRegressor` wrapped around a `RandomForestRegressor`. It was developed as part of a one-month **AICTE Virtual Internship sponsored by Shell** in **June 2025**.
 
