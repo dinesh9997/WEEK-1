@@ -30,14 +30,14 @@ Access to clean water is a critical global concern. Accurate prediction of vario
 
 ---
 
-<h2 style="color:#00aa00;">🧪 <span style="color:#00ff00;">Technologies Used</span></h2>
+<h2 style="color:#00aa00;">🧪 <font style="color:#00ff00;">Technologies Used</font></h2>
 
 <ul style="color:#66ff66;">
   <li><strong>Python 3.12</strong></li>
   <li><strong>Pandas, NumPy</strong> – Data handling</li>
   <li><strong>Scikit-learn</strong> – Machine learning model and evaluation</li>
   <li><strong>Matplotlib, Seaborn</strong> – Data visualization</li>
-  <li><strong>Jupyter Notebook</strong> – Interactive experimentation</li>
+  <li><strong>Google Colab</strong> – Interactive experimentation</li>
 </ul>
 
 ---
