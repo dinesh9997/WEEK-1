@@ -9,12 +9,7 @@ import streamlit as st
 model=joblib.load("water_quality_model.pkl")
 model_cols=joblib.load("model_columns.pkl")
 
-# Load external CSS
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-local_css("styles.css")
 
 
 #create an user interface
