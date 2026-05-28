@@ -1,72 +1,92 @@
-<h1 style="color:#00ff00; font-family:Arial Black, Gadget, sans-serif;">WEEK-1: Water Quality Prediction</h1>
+# 🌊 Water Quality Prediction & Safety Assessor
 
-<p style="color:#00cc44;">
-It is about <strong>[WATER QUALITY PREDICTION]</strong> using a machine learning algorithm.  
-I have been selected for the <strong>Green Skills AI Technology Internship</strong> on Edunet Foundation.  
-</p>
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge.svg)](https://dinesh9997-week-1-app-umfu9f.streamlit.app/)
+[![Python Version](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Edunet Foundation](https://img.shields.io/badge/Internship-Edunet%20Foundation-orange.svg)](https://edunetfoundation.org/)
 
-<p style="color:#00ff66;"><strong>Author</strong>: Gujju Dinesh</p>
+An advanced Machine Learning application that predicts water pollutants based on Year and Station ID, then automatically assesses whether the water is safe for human consumption based on international health standards.
 
-<span style="color🟢; font-size:20px;"><b>Water Quality Prediction </b></span>  
+This project was successfully developed by **Gujju Dinesh** as part of the **Green Skills AI Technology Internship** on **Edunet Foundation** (an AICTE Virtual Internship sponsored by Shell, June–July 2025).
 
-<p style="color:#33ff33;">
-This project aims to predict multiple water quality parameters using machine learning techniques, specifically <code>MultiOutputRegressor</code> wrapped around a <code>RandomForestRegressor</code>. It was developed as part of a one-month <strong>AICTE Virtual Internship sponsored by Shell</strong> in <strong>June 2025</strong>.
-</p>
+🚀 **Live Interactive Demo:** [https://dinesh9997-week-1-app-umfu9f.streamlit.app/](https://dinesh9997-week-1-app-umfu9f.streamlit.app/)
 
 ---
 
-<h2 style="color:#00aa00;">🔍 <span style="color:#00ff00;">Overview</span></h2>
+## 🔍 Project Overview
 
-<p style="color:#ccffcc;">
-Access to clean water is a critical global concern. Accurate prediction of various water quality metrics can help in early detection of pollution and ensure timely intervention.  
-</p>
+Access to clean, safe drinking water is one of the most critical global environmental and health concerns. Early detection of water pollution is vital for timely ecological intervention.
 
-<ul style="color:#66ff66;">
-  <li>Collected and preprocessed real-world water quality datasets</li>
-  <li>Used supervised machine learning for multi-target regression</li>
-  <li>Built a pipeline using <code>MultiOutputRegressor</code> with <code>RandomForestRegressor</code></li>
-  <li>Evaluated the model using appropriate regression metrics</li>
-</ul>
+This project utilizes supervised machine learning—specifically a **Multi-Output Random Forest Regressor**—to predict concentrations of multiple chemical and biological pollutants simultaneously.
+
+### 🌟 Key Features
+* **Multi-Target Regressor:** Predicts multiple pollutant concentrations simultaneously using a unified Random Forest backbone.
+* **Instant Safety Evaluation:** Automatically compares predicted metrics against standard safety thresholds (e.g. O2, NO3, SO4, CL) to give a definitive "SAFE" or "NOT SAFE" assessment.
+* **Streamlit Interface:** High-end, interactive, and responsive web app deployed to the cloud for real-time predictions.
 
 ---
 
-<h2 style="color:#00aa00;">🧪 <font style="color:#00ff00;">Technologies Used</font></h2>
+## 🌊 Predicted Water Quality Parameters & Safety Standards
 
-<ul style="color:#66ff66;">
-  <li><strong>Python 3.12</strong></li>
-  <li><strong>Pandas, NumPy</strong> – Data handling</li>
-  <li><strong>Scikit-learn</strong> – Machine learning model and evaluation</li>
-  <li><strong>Matplotlib, Seaborn</strong> – Data visualization</li>
-  <li><strong>Google Colab</strong> – Interactive experimentation</li>
-</ul>
+The application predicts the concentrations of 6 major chemical/biological water quality indicators. It automatically flags them if they cross standard health limits:
 
----
-
-<h2 style="color:#00aa00;">🌊 <span style="color:#00ff00;">Predicted Water Quality Parameters</span></h2>
-
-<ul style="color:#99ff99;">
-  <li>NH4</li>
-  <li>BOD5 (BSK5)</li>
-  <li>Colloids</li>
-  <li>O2, NO3, NO2, SO4, PO4</li>
-  <li>CL</li>
-</ul>
+| Parameter | Standard / Safe Range | Health Impact / Description |
+| :--- | :--- | :--- |
+| **O2 (Dissolved Oxygen)** | `6.5 - 14.0 mg/L` | Critical for aquatic life; abnormal values indicate biological contamination. |
+| **NO3 (Nitrate)** | `0.0 - 50.0 mg/L` | High levels cause methemoglobinemia ("blue baby syndrome"). |
+| **NO2 (Nitrite)** | `0.0 - 3.0 mg/L` | Highly toxic chemical compound indicating industrial or waste runoff. |
+| **SO4 (Sulfate)** | `0.0 - 250.0 mg/L` | Excess causes laxative effects and salty taste. |
+| **PO4 (Phosphate)** | `0.0 - 0.5 mg/L` | High levels cause eutrophication and algae blooms. |
+| **CL (Chloride)** | `0.0 - 250.0 mg/L` | High concentrations give a salty taste and corrode pipes. |
 
 ---
 
-<h2 style="color:#00aa00;">📈 <span style="color:#00ff00;">Model Performance</span></h2>
+## 🧪 Tech Stack & Libraries Used
 
-<ul style="color:#66ff66;">
-  <li><strong>R² Score</strong></li>
-  <li><strong>Mean Squared Error (MSE)</strong></li>
-</ul>
-
-<p style="color:#33ff33;">Performance was acceptable across all parameters.</p>
+* **Python 3.12**
+* **Streamlit** – Web framework for local development and cloud deployment
+* **Scikit-Learn** – Model building (`MultiOutputRegressor`, `RandomForestRegressor`) and preprocessing
+* **Pandas & NumPy** – High-performance data structures and numerical operations
+* **Joblib** – Python model serialization and loading
 
 ---
 
-<h2 style="color:#00aa00;">🔗 <span style="color:#00ff00;">Model Link</span></h2>
+## 📈 Machine Learning Pipeline & Model Details
+
+The model architecture utilizes a **Multi-Output Regressor wrapper** wrapped around a **RandomForestRegressor** to output multiple continuous values (pollutant concentrations) for a given `Year` and `Station ID`.
+
+* **Pretrained Models:** 
+  * `water_quality_model.pkl` (Random Forest Multi-Output Regressor)
+  * `model_columns.pkl` (Feature Columns Mapper)
+
+---
+
+## 💻 Running the App Locally
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/dinesh9997/WEEK-1.git
+cd WEEK-1
+```
+
+### 2. Install Dependencies
+Ensure you have Python 3.12+ installed, then run:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Start the Streamlit Application
+```bash
+python -m streamlit run app.py
+```
+Open [http://localhost:8501](http://localhost:8501) in your browser to view your running application!
+
+---
+
+## 👤 Author & Acknowledgment
+
+* **Author:** Gujju Dinesh
+* **Internship Sponsor:** Shell & Edunet Foundation (Green Skills AI Internship, June–July 2025)
+* **Virtual Platform:** AICTE
 
 
-
-<a href="https://drive.google.com/file/d/1zqzXAj_Ovq9O-GZUMXeXndyaPiFkq2mG/view?usp=drive_link " style="color:#00ff00; font-weight:bold;" target="_blank">https://drive.google.com/file/d/1zqzXAj_Ovq9O-GZUMXeXndyaPiFkq2mG/view?usp=drive_link </a>
