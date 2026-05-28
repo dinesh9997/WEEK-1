@@ -1,6 +1,4 @@
 # 🌊 Water Quality Prediction & Safety Assessor
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge.svg)](https://dinesh9997-week-1-app-umfu9f.streamlit.app/)
 [![Python Version](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Edunet Foundation](https://img.shields.io/badge/Internship-Edunet%20Foundation-orange.svg)](https://edunetfoundation.org/)
@@ -79,7 +77,7 @@ pip install -r requirements.txt
 ```bash
 python -m streamlit run app.py
 ```
-Open [http://localhost:8501](http://localhost:8501) in your browser to view your running application!
+Open the local URL shown in the terminal (usually http://localhost:8501) to access the app in your browser.
 
 ---
 
